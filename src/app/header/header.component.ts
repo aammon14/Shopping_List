@@ -18,4 +18,8 @@ constructor(private dataStorageService: DataStorageService) {}
                 }
             );
     }
+
+    onFetchData() {
+        this.dataStorageService.getRecipes();
+    }
 }
