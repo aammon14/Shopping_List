@@ -27,4 +27,8 @@ constructor(private dataStorageService: DataStorageService, private authService:
     onLogout() {
         this.authService.logout();
     }
+
+    isAuthenticated() {
+        return this.authService.isAuthenticated();
+    }
 }
